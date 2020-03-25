@@ -14,8 +14,6 @@
  
  **Font:** 'Orbitron', Ik heb voor dit font gekozen omdat het een moderne sfeer geeft. Dit gaat goed samen met het bedrijf spaceX.
  
- **Lay-out:**
- 
  **Darkmode:** Ik heb om onderscheid tussen delen van de dag darkmode toegevoegd aan de webpagina. De orginele gorenekleur kan fel overkomen bij de gebruiker. Hierom wordt de achtergrond zwart na 6 uur. Ik heb specifiek voor 6 uur gekozen omdat het vanaf dat punt donker kan gaan worden.
  
  ## Breakpoints
@@ -29,3 +27,5 @@
 **1300px:** Deze breakpoint is gemaakt om wederom de items op de webpagina te vergroten.
  
   ## Code
+  
+  
