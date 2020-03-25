@@ -1,3 +1,4 @@
+//code voor de animatie van de klok
 setInterval(setClock, 1000)
 
 const hourHand = document.querySelector('[data-hour-hand]')
@@ -20,7 +21,7 @@ function setRotation(element, rotationRatio) {
 
 setClock()
 
-//De code voor de uren en minuten digitaal begint hier
+//Tijd en dag van vandaag wordt hierdoor gevisualiseerd
 function showTime(){
     var date = new Date();
 	var s = date.getSeconds();
@@ -43,7 +44,6 @@ function showTime(){
     document.getElementById("timeMinute").innerHTML = m;
 	document.getElementById("timeSeconds").innerHTML = s;
     
-    //Dit is geen setInterval omdat de klok hier onder het anders niet meer doet...
     setTimeout(showTime, 1000);
     
 }
@@ -51,16 +51,16 @@ function showTime(){
 showTime();
 
 
-//hier begint de code voor dark-mode
+//darkmode visualisatie bij 6 uur
 function darkMode(){
     var date = new Date();
     var h = date.getHours();
-    var d = document.getElementById('theme');
+    var d = document.getElementById('darktheme');
     
     if (h > 17 || h < 6){
-        d.classList.add('dark');
+        d.classList.add('darkmode');
     }else{
-        d.classList.remove('dark');
+        d.classList.remove('darkmode');
     }
 }
 

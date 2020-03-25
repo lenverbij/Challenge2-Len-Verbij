@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="styles.css" rel="stylesheet">
   <script defer src="script.js"></script>
-  <title>Clock</title>
+  <title>Challenge 2 clock</title>
 </head>
-<body id="theme">
-	<main>
+<body id="darktheme">
+	<!--container van de klok--->
+	<article class="clockPosition">
+	<!--inhoud van de klok-->
 	  <div class="clock">
 		<div class="hand hour" data-hour-hand></div>
 		<div class="hand minute" data-minute-hand></div>
@@ -27,17 +28,21 @@
 		<div class="number number11">11</div>
 		<div class="number number12">12</div>
 	  </div>
-	  <article id="day">
-         <h1 id="dateToday"></h1>
-         <h2 id="dateMonth"></h2>
-	  </article>
-      <article id="time">
-		<h1 id="timeHour"></h1>
-		<p class="dubbelepunt">:</p>
-		<h1 id="timeMinute"></h1>
-		<p class="dubbelepunt">:</p>
-		<h1 id="timeSeconds"></h1>
-	 </article>
-	</main>
+	</article>
+	<div class="container">
+		<!--container van de maand en dag-->
+		<article id="day">
+		   <h1 id="dateToday"></h1>
+		   <h2 id="dateMonth"></h2>
+		</article>
+		<!--container van de tijd-->
+		<article id="time">
+		   <h1 id="timeHour"></h1>
+		   <p class="dubbelepunt">:</p>
+		   <h1 id="timeMinute"></h1>
+		   <p class="dubbelepunt">:</p>
+		   <h1 id="timeSeconds"></h1>
+		</article>
+	</div>
 </body>
 </html>
