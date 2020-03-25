@@ -17,12 +17,13 @@
  **Darkmode:** Ik heb om onderscheid tussen delen van de dag darkmode toegevoegd aan de webpagina. De orginele gorenekleur kan fel overkomen bij de gebruiker. Hierom wordt de achtergrond zwart na 6 uur. Ik heb specifiek voor 6 uur gekozen omdat het vanaf dat punt donker kan gaan worden.
  
  ## Breakpoints
+ De breakpoints heb ik afgestemd op de content van mijn pagina, niet naar bekende of veel gebruikte standaarden.
  
-**360px** (standaard)
+**360px** (standaard) Alle content van de pagina staat onder elkaar om de content eruit te laten springen.
 
 **600px:** Bij deze breakpoint was het doel om het de items opm de pagina te vergroten.
 
-**980px:** Bij deze breakpoint is het scherm groot genoeg om de analoge en digitale klok naast elkaar te visualiseren om beter gebruik te maken van de scherm breedte.
+**980px:** Bij deze breakpoint is het scherm groot genoeg om de analoge en digitale klok naast elkaar te visualiseren om beter gebruik te maken van de scherm breedte en toch de content duidelijk en groot te hebben.
 
 **1300px:** Deze breakpoint is gemaakt om wederom de items op de webpagina te vergroten.
  
