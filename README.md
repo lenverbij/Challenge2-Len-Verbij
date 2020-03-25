@@ -26,6 +26,4 @@
 
 **1300px:** Deze breakpoint is gemaakt om wederom de items op de webpagina te vergroten.
  
-  ## Code
-  
   
