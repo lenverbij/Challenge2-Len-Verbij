@@ -1,47 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
 *{
   box-sizing: border-box;
-  font-family: Gotham Rounded, sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 body {
   background: #97ffa1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
   overflow: hidden;
+  width: 100%;
 }
 
-#day{
+/*container van de klok*/
+.clockPosition{
 	display: flex;
-	justify-content:space-between;
+	justify-content: center;
+}
+#day{
+	justify-content: center;
 	font-size: 1.8rem ;
+	text-align: center;
 }
 
 #time{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	font-size: 2.5rem ;
+	margin-top: 0;
 }
-.dubbelepunt{
-	font-size: 3rem ;
+#timeHour, #timeMinute, #timeSeconds{
+	margin-top: 0;
 }
 
-.dark{
+/*dubbelepunt tussen de tijdseenheden*/
+.dubbelepunt{
+	font-size: 3rem ;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	margin-top: 0;
+	padding-top: 3px;
+}
+
+/*code voor darkmode*/
+.darkmode{
     background: #000;
     color: white;
     transition: 1s;
 }
-
+/*visualisatie klok*/
 .clock {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   background-color: rgba(255, 255, 255, .6);
   border-radius: 50%;
   border: 2px solid black;
   position: relative;
+  margin-top: 5%;
 }
-
+/*klok nummers*/
 .clock .number {
   --rotation: 0;
   position: absolute;
@@ -51,7 +67,7 @@ body {
   transform: rotate(var(--rotation));
   font-size: 1.5rem;
 }
-
+/*hoek van de nummers in de klok*/
 .clock .number1 { --rotation: 30deg; }
 .clock .number2 { --rotation: 60deg; }
 .clock .number3 { --rotation: 90deg; }
@@ -64,6 +80,7 @@ body {
 .clock .number10 { --rotation: 300deg; }
 .clock .number11 { --rotation: 330deg; }
 
+/*wijzer van de klok*/
 .clock .hand {
   --rotation: 0;
   position: absolute;
@@ -76,7 +93,7 @@ body {
   z-index: 10;
   transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 }
-
+/*cirkel in het midden van de klok*/
 .clock::after {
   content: '';
   position: absolute;
@@ -89,21 +106,66 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-
+/*seconden wijzer*/
 .clock .hand.second {
   width: 3px;
   height: 45%;
   background-color: red;
 }
-
+/*minuten wijzer*/
 .clock .hand.minute {
   width: 7px;
   height: 40%;
   background-color: black;
 }
-
+/*uren wijzer*/
 .clock .hand.hour {
   width: 10px;
   height: 35%;
   background-color: black;
+}
+
+@media only screen and (min-width: 600px){
+	#day{
+		font-size: 2rem;
+	}
+	#time{
+		font-size: 2.5rem;
+	}
+	.clock{
+		width: 350px;
+		height: 350px;
+	}
+}
+@media only screen and (min-width: 980px){
+	body{
+		display: flex;
+		justify-content: center;
+		padding-top: 5%;
+	}
+	#time{
+		font-size: 2rem;
+	}
+	.dubbelepunt{
+		font-size: 2.5rem;
+	}
+	.container{
+		margin-left: 3%;
+		margin-top: 2%;
+	}
+}
+@media only screen and (min-width: 1300px){
+	.clock{
+		width: 450px;
+		height: 450px;
+	}
+	#time{
+		font-size: 2.5rem;
+	}
+	#day{
+		font-size: 2.5rem;
+	}
+	.dubbelepunt{
+		font-size: 3rem;
+	}
 }
