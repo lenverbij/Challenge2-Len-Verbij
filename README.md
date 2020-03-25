@@ -3,13 +3,13 @@
  
  **Len Verbij** (17114772)
  
- ## Uitleg
+ # Uitleg
  Ik heb voor deze challenge een analoge en digitale klok gemaakt. Beide zijn afgetsemd op de huidige tijd van de computer.
  
- # Ontwerp / features
+ ## Ontwerp / features
  
  
- # Breakpoints
+ ## Breakpoints
  
 **360px** (standaard)
 
@@ -19,4 +19,4 @@
 
 **1300px:** Deze breakpoint is gemaakt om wederom de items op de webpagina te vergroten.
  
-  # Code
+  ## Code
