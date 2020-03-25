@@ -8,6 +8,15 @@
  
  ## Ontwerp / features
  
+ **Analoge klok:** De analoge klok is simpel van design. Rond met cijfers zoals op een normale klok. De wijzers van de klok zijn wederom hetzelfde als een klassieke klok. De seconde wijzer heb ik ook rood gemaakt om goed het verschil te laten zien tussen de andere wijzers (minuten en uren). De uren wijzer is het dikste daarna de minuten en de seconden het dunst. 
+ 
+ **Kleur:** #97ffa1 (licht groen) Ik heb voor een licht groene kleur gekozen omdat het mooi contrast heeft met de inhoud van de pagina en een 'aards' gevoel geeft voor de mensen in Mars die de klok gaan gebruiken.
+ 
+ **Font:** 'Orbitron', Ik heb voor dit font gekozen omdat het een moderne sfeer geeft. Dit gaat goed samen met het bedrijf spaceX.
+ 
+ **Lay-out:**
+ 
+ **Darkmode:** Ik heb om onderscheid tussen delen van de dag darkmode toegevoegd aan de webpagina. De orginele gorenekleur kan fel overkomen bij de gebruiker. Hierom wordt de achtergrond zwart na 6 uur. Ik heb specifiek voor 6 uur gekozen omdat het vanaf dat punt donker kan gaan worden.
  
  ## Breakpoints
  
